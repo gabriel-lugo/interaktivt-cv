@@ -25,8 +25,20 @@ aside {
 }
 
 main {
-    /* margin-top: 4rem; */
+    background-color: darkred;
     color: white;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 .close {
@@ -102,13 +114,26 @@ a {
     }
 
     main {
-        margin-top: 0;
-        margin-left: 2.8rem;
+        max-width: 50rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
     }
 
     .close .copyright,
     .close .profile {
         visibility: hidden;
     }
+
+}
+
+@media (min-width: 992px) {
+
 
 }
