@@ -12,6 +12,9 @@ function addEventListeners() {
     for (const li of listItems) {
         li.addEventListener('click', handleNavItemClick);
     }
+
+    const aside = document.querySelector('aside');
+    aside.addEventListener('click', toggleSidebar);
 }
 
 function handleNavItemClick(event) {
