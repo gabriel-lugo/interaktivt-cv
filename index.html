@@ -8,38 +8,41 @@
     <script src="https://kit.fontawesome.com/ab618c0a85.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="flex row align-center justify-between">
+    <header class="flex align-center justify-between p05">
             
                 <div id="logo">
                     <a href="#" class="home">
                         <img src="images/logo.png" alt="GLM logo" class="logo m05">
                     </a>
                 </div>
-                <div>
-                    <i class="fa-solid fa-bars m05" id="dropdown-menu"></i>
+
+                <div id="toggle-box">
+                    <i class="fa-solid fa-bars m05" id="menu-button"></i>
+                    <i class="fa-solid fa-xmark m05" id="close-button"></i>
                 </div>
-                <nav class="navbar">
+
+                <nav class="navbar flex justify-center">
                     <ul class="menu">
                         <li>
-                            <a href="#about" class="menu-item block active">About</a>
+                            <a href="#about" class="menu-item active">About</a>
                         </li>
                         <li>
-                            <a href="#skills" class="menu-item block">Skills</a>
+                            <a href="#skills" class="menu-item">Skills</a>
                         </li>
                         <li>
-                            <a href="#education" class="menu-item block">Education</a>
+                            <a href="#education" class="menu-item">Education</a>
                         </li>
                         <li>
-                            <a href="#work" class=" menu-item block">Work</a>
+                            <a href="#work" class=" menu-item">Work</a>
                         </li>
                         <li>
-                            <a href="#contact" class="menu-item block">Contact</a>
+                            <a href="#contact" class="menu-item">Contact</a>
                         </li>
                     </ul>
 
@@ -54,7 +57,7 @@
             <h2>Frontend Developer</h2>
         </section>
 
-        <section id="about">
+        <section id="about" class="mt4">
             <h3>About</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid 
                 ducimus recusandae explicabo iure illum hic deleniti soluta, voluptatem 
@@ -64,7 +67,7 @@
                 voluptatibus quia culpa nisi veniam rem placeat dicta repudiandae tempora ipsum.</p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="mt4">
             <h3>Skills</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid 
                 ducimus recusandae explicabo iure illum hic deleniti soluta, voluptatem 
@@ -84,7 +87,7 @@
                 voluptatibus quia culpa nisi veniam rem placeat dicta repudiandae tempora ipsum.</p>
         </section>
 
-        <section id="work">
+        <section id="work" class="mt4">
             <h3>Work</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid 
                 ducimus recusandae explicabo iure illum hic deleniti soluta, voluptatem 
@@ -94,7 +97,7 @@
                 voluptatibus quia culpa nisi veniam rem placeat dicta repudiandae tempora ipsum.</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="mt4">
             <h3>Contact</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid 
                 ducimus recusandae explicabo iure illum hic deleniti soluta, voluptatem 
@@ -105,48 +108,5 @@
         </section>
 
     </main>
-            <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="GLM Logo" style="width:6rem;" class="rounded-pill"> 
-                  </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link link-light" href="#">
-                        <i class="fa-solid fa-user-tie m05"></i>
-                        About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link link-light" href="#">
-                        <i class="fa-solid fa-laptop-code m05"></i>                        
-                        Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-light" href="#">
-                        <i class="fa-solid fa-user-graduate m05"></i>
-                        Education</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-light" href="#">
-                        <i class="fa-solid fa-briefcase m05"></i>
-                        Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">
-                            <i class="fa-solid fa-envelope m05"></i>
-                            Contact</a>
-                      </li>
-                </div>
-              </div>
-            </nav> -->
-            
-
-    
-
-
 </body>
 </html>
