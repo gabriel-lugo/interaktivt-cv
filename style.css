@@ -18,10 +18,11 @@ body {
 
 header {
     position: fixed;
+    left: 0;
     top: 0;
-    background-color: var(--primary-color);
     width: 100%;
     height: 4rem;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -45,6 +46,10 @@ p {
     font-size: 2rem;
 }
 
+.profile {
+    width: 15rem;
+}
+
 #menu-button {
     color: var(--secondary-color);
     font-size: 2rem;
@@ -58,56 +63,53 @@ p {
 }
 
 #close-button {
-    color: var(--secondary-color);
-    font-size: 2rem;
-    cursor: pointer;
     display: none;
+    color: var(--secondary-color);
+    font-size: 3rem;
+    cursor: pointer;
     transition: 500ms;
 }
 
 #close-button.show {
-    display: block;
+    display: flex;
 }
 
 .logo {
     height: 3rem;
 }
 
-.navbar {
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    height: 0;
-    top: 4rem;
     left: 0;
-    width: 100vw;
-    background-color: var(--primary-color);
-    transition: 400ms;
-    overflow: hidden;
-}
-
-.navbar.open {
+    top: 4rem;
+    width: 100%;
     height: 100vh;
+
+    background-color: var(--primary-color);
 }
-
-
-
-.menu {
+ 
+.navigation.open .menu {
+    padding: 1rem;
+    margin-top: 5rem;
     list-style: none;
     text-align: center;
-    margin-top: 4rem;
 }
 
-.menu-item {
-    color: var(--secondary-color);
+.navigation.open .menu-item {
     font-size: 3rem;
+    margin: 2rem;
     text-decoration: none;
-    transition: 200ms;
+    color: var(--secondary-color);
 }
 
-.menu-item:hover {
-    color: var(--tertiary-color);
-}
-
-.menu-item.active {
+.navigation.open .menu-item:hover {
     color: var(--tertiary-color);
 }
 
@@ -117,6 +119,8 @@ p {
 .justify-center { justify-content: center;}
 .justify-between { justify-content: space-between;}
 .p0 { padding: 0;}
+.p1 { padding: 1rem;}
+.p2 { padding: 2rem;}
 .m05 { margin: .5rem;}
 .mt4 { margin-top: 4rem;}
 .primary-bg { background-color: var(--primary-color);}
@@ -141,16 +145,48 @@ p {
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 4rem;
-    }
+    h1 { font-size: 4rem; }
 
-    h2 {
-        font-size: 3.6rem;
-    }
+    h2 { font-size: 3.6rem;}
 
     h3 {
         font-size: 3rem;
     }
+
+    #toggle-box {
+        display: none;
+    }
+
+
+
+    .navigation {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        color: var(--secondary-color);
+    }
+
+    .menu-item:hover {
+        color: var(--tertiary-color);
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
 
 }

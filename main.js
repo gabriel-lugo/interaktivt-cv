@@ -7,11 +7,11 @@ function main() {
 function addEventListeners() {
     const dropdownMenuButton = document.getElementById('toggle-box');
     dropdownMenuButton.addEventListener('click', toggleMenu);
-    
+   
 }
 
 function toggleMenu() {
-    const menu = document.querySelector('.navbar');
+    const menu = document.querySelector('.navigation');
     const menuButton = document.getElementById('menu-button');
     const closeButton = document.getElementById('close-button');
 
