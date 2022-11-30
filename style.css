@@ -1,139 +1,42 @@
-:root {
-    --primary-color: red;
-    /* --secondary-color: red; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    font-family: 'Source Sans Pro', sans-serif;
+    background-color: whitesmoke;
 }
-
 header {
-    position: fixed;
+    background-color: black;
     width: 100%;
-    background-color: gray;
+    height: 4rem;
 }
 
-aside {
-    position: fixed;
-    inset: 0;
-    width: 17rem;
-    background-color: #878787f8;
-    transition: all 500ms;
-    overflow-x: hidden;
-    white-space: nowrap;
-}
+/* main {
+    background-color: pink;
+    height: 200px;
+} */
 
-main {
-    background-color: darkred;
+#burger-menu {
     color: white;
-}
-
-h1 {
-    font-size: 2.2rem;
-}
-
-h2 {
-    font-size: 1.7rem;
-}
-
-h3 {
     font-size: 2rem;
 }
 
-.close {
-    width: 0;
+.logo {
+    height: 3rem;
 }
 
-li {
-    list-style-type: none;
-    padding: 1rem;
-    white-space: nowrap;
-    transition: 330ms;
-}
-
-li:hover {
-    background-color: #CCCCCC22;
-}
-
-a {
-    color: black;
+.navbar {
+    list-style: none;
     text-decoration: none;
 }
 
-/* Specific classes */
-.active {
-    background-color: #CCCCCC55;
-    border-right: .2rem solid var(--primary-color);
-}
-
-.avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    object-fit: cover;
-    object-position: 0;
-}
-
-.burger-menu {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    font-size: 2rem;
-    color: rgba(255, 0, 0, 0.967);
-    cursor: pointer;
-    transition: display 400ms;
-}
-
-.menu-icon {
-    font-size: 1rem;
-}
-
-
-/* Reusable classes */
-
 .flex { display: flex; }
-.hidden { display: none; }
-.column { flex-direction: column; }
-.justify-between { justify-content: space-between; }
-.justify-center { justify-content: center; }
-.align-center { align-items: center; }
-.gap1 { gap: 1rem; }
-.m0 { margin: 0; }
-.p0 { padding: 0; }
-.p1 { padding: 1rem; }
-
-
-/* Tablet */
-@media (min-width: 768px) {
-    .close {
-        width: 2.8rem;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    main {
-        max-width: 50rem;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    h1 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-    .close .copyright,
-    .close .profile {
-        visibility: hidden;
-    }
-
-}
-
-@media (min-width: 992px) {
-
-
-}
+.block { display: block; }
+.row { flex-direction: row; }
+.align-center { align-items: center;}
+.justify-center { justify-content: center;}
+.justify-between { justify-content: space-between;}
+.p0 { padding: 0;}
+.m05 { margin: .5rem;}
