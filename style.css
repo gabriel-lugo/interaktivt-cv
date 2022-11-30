@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--secondary-color);
 }
 
 header {
@@ -119,6 +119,10 @@ p {
 .p0 { padding: 0;}
 .m05 { margin: .5rem;}
 .mt4 { margin-top: 4rem;}
+.primary-bg { background-color: var(--primary-color);}
+.secondary-bg { background-color: var(--secondary-color);}
+.primary-text { color: var(--primary-color);}
+.secondary-text { color: var(--secondary-color)}
 
 
 @media (min-width: 500px) {
