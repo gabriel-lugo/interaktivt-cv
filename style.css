@@ -8,18 +8,32 @@ body {
     background-color: lightgoldenrodyellow;
     font-family: 'Open Sans', sans-serif;
 }
+
 header {
     position: fixed;
+    top: 0;
     background-color: black;
     width: 100%;
     height: 4rem;
     padding: 0 .5rem;
 }
 
-/* main {
-    background-color: pink;
-    height: 200px;
-} */
+main {
+    margin-top: 4rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
 
 #dropdown-menu {
     color: white;
@@ -83,3 +97,34 @@ header {
 .justify-between { justify-content: space-between;}
 .p0 { padding: 0;}
 .m05 { margin: .5rem;}
+
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+}
