@@ -20,14 +20,15 @@
     transition: all 300ms cubic-bezier(.25,.8,.25,1);
 }
 
-.bar:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
 .bar span {
     height: 20px;
     float: left;
     background-color: var(--tertiary-color);
+    transition: 500ms;
+}
+
+.bar span:hover {
+    background-color: #d40311;
 }
 
 .html {

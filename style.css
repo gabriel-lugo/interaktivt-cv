@@ -55,7 +55,10 @@ footer {
     height: 4rem;
     background-color: var(--primary-color);
 }
-
+#about a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 .profile {
     width: 15rem;
     border-radius: 50%;
@@ -123,6 +126,7 @@ footer {
 }
 
 .navigation.open .menu-item {
+    text-transform: uppercase;
     font-size: 3rem;
     margin: 2rem;
     text-decoration: none;

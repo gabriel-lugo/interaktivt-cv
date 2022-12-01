@@ -44,6 +44,7 @@
     }
 
     .menu-item {
+        text-transform: uppercase;
         text-decoration: none;
         font-size: 1.5rem;
         margin-left: 1rem;
@@ -108,17 +109,22 @@
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2056px) {
     h1 { font-size: 12rem; }
 
     h2 { font-size: 10rem;}
 
     h3 {
         font-size: 9rem;
+        margin-top: 6rem;
     }
 
     header {
         height: 8rem;
+    }
+
+    p {
+        font-size: 3rem;
     }
 
     .logo {
@@ -135,6 +141,10 @@
 
     .profile {
         width: 35rem;
+    }
+
+    #work {
+        margin-bottom: 8rem;
     }
 
     footer {
