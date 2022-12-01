@@ -3,7 +3,7 @@
     --secondary-color: white;
     --tertiary-color: red;
 }
-
+/* Global styling */
 * {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -53,7 +53,7 @@ footer {
     height: 4rem;
     background-color: var(--primary-color);
 }
-
+/* Specific classes and ids */
 .profile {
     width: 15rem;
 }
@@ -129,6 +129,90 @@ footer {
 .navigation.open .menu-item:hover {
     color: var(--tertiary-color);
 }
+/* Progression bars */
+.skill {
+    width: 500px;
+    padding: 20px;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+}
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    transition: all 300ms cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background-color: var(--tertiary-color);
+}
+
+.html {
+    width: 70%;
+    animation: html 3s;
+}
+.css {
+    width: 65%;
+    animation: css 3s;
+}
+.javascript {
+    width: 45%;
+    animation: javascript 3s;
+}
+.heavy-metal {
+    width: 100%;
+    animation: heavy-metal 3s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes heavy-metal {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 
 .reveal {
     opacity: 0;
@@ -149,7 +233,7 @@ footer {
     color: var(--primary-color);
     margin: 1rem;
 }
-
+/* Reusable classes */
 .flex { display: flex; }
 .row { flex-direction: row; }
 .column { flex-direction: column;}
@@ -260,4 +344,60 @@ footer {
     .profile {
         width: 25rem;
     }
+
+    .home-socials {
+        display: none;
+    }
+
+    #work {
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    h1 { font-size: 12rem; }
+
+    h2 { font-size: 10rem;}
+
+    h3 {
+        font-size: 9rem;
+    }
+
+    header {
+        height: 8rem;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    .menu-item {
+         font-size: 3rem;
+    }
+
+    main {
+        margin-top: 8rem;
+    }
+
+    .profile {
+        width: 35rem;
+    }
+
+    footer {
+        height: 8rem;
+    }
+
+    .social-icon {
+        font-size: 4rem;
+        margin: 2rem;
+    }
+
 }
