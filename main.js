@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', main);
 
+/**
+ * Global variables for typingIntro-function
+ */
 const text = ["Frontend Developer"];
 const speed = 95;
 let textPosition = 0;
@@ -10,6 +13,8 @@ function main() {
 }
 
 function addEventListeners() {
+    window.addEventListener('scroll', reveal);
+
     const dropdownMenuButton = document.getElementById('toggle-box');
     dropdownMenuButton.addEventListener('click', toggleMenu);
    
@@ -17,22 +22,25 @@ function addEventListeners() {
     for (const li of menuItems) {
         li.addEventListener('click', handleMenuClick);
     }
-
-    const logo = document.getElementById('logo');
-    logo.addEventListener('click', handleLogoClick);
-
 }
 
-function handleLogoClick() {
-    const body = document.querySelector('body');
-    const menu = document.querySelector('.navigation');
-    const menuButton = document.getElementById('menu-button');
-    const closeButton = document.getElementById('close-button');
+function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
 
-    body.classList.remove('overflow-hidden');
-    menu.classList.remove('open');
-    menuButton.classList.toggle('hide');
-    closeButton.classList.toggle('show');
+    for(let i = 0; i < reveals.length; i++) {
+
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active');
+
+        }
+
+    }
 
 }
 
@@ -42,6 +50,8 @@ function typingIntro() {
         setTimeout(typingIntro, speed)
     }
 }
+
+
 
 function toggleMenu() {
     const body = document.querySelector('body');
@@ -56,7 +66,6 @@ function toggleMenu() {
 }
 
 function handleMenuClick() {
-    console.log("hej");
     const body = document.querySelector('body');
     const menu = document.querySelector('.navigation');
     const menuButton = document.getElementById('menu-button');

@@ -9,15 +9,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 
 body {
     background-color: var(--secondary-color);
 }
 
 header {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -55,7 +55,7 @@ p {
 .line {
     background-color: var(--primary-color);
     height: .5rem;
-    width: 10rem
+    width: 2rem
     
 }
 
@@ -92,7 +92,6 @@ p {
 
 .navigation {
     display: none;
-    transition: height 500ms;
 }
 
 .navigation.open {
@@ -104,8 +103,6 @@ p {
     top: 3.9rem;
     width: 100%;
     height: 100vh;
-    transition: 500ms;
-
     background-color: var(--primary-color);
 }
  
@@ -125,6 +122,15 @@ p {
 
 .navigation.open .menu-item:hover {
     color: var(--tertiary-color);
+}
+
+.reveal {
+    opacity: 0;
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
 }
 
 .flex { display: flex; }
@@ -157,6 +163,12 @@ p {
     h3 {
         font-size: 2rem;
     }
+
+    .line {
+        width: 3rem;
+    }
+
+
 
 }
 
@@ -195,13 +207,17 @@ p {
         color: var(--tertiary-color);
     }
 
+    .li {
+        transition: 1s;
+    }
+
+    .line {
+        width: 4rem;
+    }
+
 
 }
 
-@media (min-width: 992px) {
-
-
-}
 
 @media (min-width: 1200px) {
     h1 { font-size: 8rem; }
@@ -210,5 +226,13 @@ p {
 
     h3 {
         font-size: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .line {
+        width: 6rem;
     }
 }
