@@ -50,7 +50,7 @@ p {
 }
 
 footer {
-    height: 10rem;
+    height: 6rem;
     background-color: var(--primary-color);
 }
 
@@ -141,6 +141,12 @@ footer {
 .social-icon {
     font-size: 2.5rem;
     color: var(--secondary-color);
+    margin: 2rem;
+}
+
+.social-icon-home {
+    font-size: 4rem;
+    color: var(--primary-color);
     margin: 2rem;
 }
 
