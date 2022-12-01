@@ -1,0 +1,16 @@
+.flex { display: flex; }
+.row { flex-direction: row; }
+.column { flex-direction: column;}
+.align-center { align-items: center;}
+.justify-center { justify-content: center;}
+.justify-between { justify-content: space-between;}
+.overflow-hidden { overflow: hidden;}
+.p0 { padding: 0;}
+.p1 { padding: 1rem;}
+.p2 { padding: 2rem;}
+.m05 { margin: .5rem;}
+.mt4 { margin-top: 4rem;}
+.primary-bg { background-color: var(--primary-color);}
+.secondary-bg { background-color: var(--secondary-color);}
+.primary-text { color: var(--primary-color);}
+.secondary-text { color: var(--secondary-color)}
