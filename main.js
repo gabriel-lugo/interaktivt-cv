@@ -17,6 +17,23 @@ function addEventListeners() {
     for (const li of menuItems) {
         li.addEventListener('click', handleMenuClick);
     }
+
+    const logo = document.getElementById('logo');
+    logo.addEventListener('click', handleLogoClick);
+
+}
+
+function handleLogoClick() {
+    const body = document.querySelector('body');
+    const menu = document.querySelector('.navigation');
+    const menuButton = document.getElementById('menu-button');
+    const closeButton = document.getElementById('close-button');
+
+    body.classList.remove('overflow-hidden');
+    menu.classList.remove('open');
+    menuButton.classList.toggle('hide');
+    closeButton.classList.toggle('show');
+
 }
 
 function typingIntro() {
