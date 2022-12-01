@@ -141,13 +141,13 @@ footer {
 .social-icon {
     font-size: 2.5rem;
     color: var(--secondary-color);
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .social-icon-home {
     font-size: 4rem;
     color: var(--primary-color);
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .flex { display: flex; }
@@ -232,6 +232,10 @@ footer {
         width: 4rem;
     }
 
+    .profile {
+        width: 20rem;
+    }
+
 
 }
 
@@ -251,5 +255,9 @@ footer {
 
     .line {
         width: 6rem;
+    }
+
+    .profile {
+        width: 25rem;
     }
 }
