@@ -4,7 +4,6 @@
     --tertiary-color: #d8323c;
 }
 
-/* Global styling */
 * {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -15,15 +14,6 @@
 
 body {
     background-color: var(--secondary-color);
-}
-
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 4rem;
-    background-color: var(--primary-color);
 }
 
 main {
@@ -51,16 +41,14 @@ p {
     margin-top: 1rem;
 }
 
-footer {
-    height: 4rem;
-    background-color: var(--primary-color);
-}
 #about a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 .profile {
     width: 15rem;
+    margin: 2rem 0 2rem 0;
     border-radius: 50%;
 }
 
@@ -74,68 +62,7 @@ footer {
 #home {
     height: 100vh;
 }
-#menu-button {
-    color: var(--secondary-color);
-    font-size: 2rem;
-    display: block;
-    cursor: pointer;
-    transition: 500ms;
-}
 
-#menu-button.hide {
-    display: none;
-}
-
-#close-button {
-    display: none;
-    color: var(--secondary-color);
-    font-size: 3rem;
-    cursor: pointer;
-    transition: 500ms;
-}
-
-#close-button.show {
-    display: flex;
-}
-
-.logo {
-    height: 3rem;
-}
-
-.navigation {
-    display: none;
-}
-
-.navigation.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 3.9rem;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--primary-color);
-}
- 
-.navigation.open .menu {
-    padding: 1rem;
-    margin-top: 5rem;
-    list-style: none;
-    text-align: center;
-}
-
-.navigation.open .menu-item {
-    text-transform: uppercase;
-    font-size: 3rem;
-    margin: 2rem;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.navigation.open .menu-item:hover {
-    color: var(--tertiary-color);
-}
 /* Progression bars */
 
 
@@ -147,20 +74,10 @@ footer {
 .reveal.active {
     opacity: 1;
 }
-.social-media a {
-    text-decoration: none;
-}
-.social-icon {
-    font-size: 2rem;
-    color: var(--secondary-color);
-    margin: 1rem;
-}
+
 
 .social-icon-home {
     font-size: 4rem;
     color: var(--primary-color);
     margin: 1rem;
 }
-/* Reusable classes */
-
-

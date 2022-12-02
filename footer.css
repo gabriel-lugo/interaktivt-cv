@@ -1,0 +1,13 @@
+footer {
+    height: 4rem;
+    background-color: var(--primary-color);
+}
+
+.social-media a {
+    text-decoration: none;
+}
+.social-icon {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 1rem;
+}
