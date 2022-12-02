@@ -15,6 +15,9 @@ function main() {
     addEventListeners();
 }
 
+/**
+ * Function that adds Typing-effect
+ */
 function typingIntro() {
     document.getElementById("typing").innerHTML = text[0].substring(0, textPosition) + '<span>\u25AE</span>';
     if (textPosition++ != text[0].length) {
@@ -37,6 +40,9 @@ function addEventListeners() {
     }
 }
 
+/**
+ * Function for revealing sections in main-area
+ */
 function reveal() {
     const reveals = document.querySelectorAll('.reveal');
 
@@ -54,6 +60,9 @@ function reveal() {
     }
 }
 
+/**
+ * Function for toggling dropdown-menu
+ */
 function toggleMenu() {
     const body = document.querySelector('body');
     const menu = document.querySelector('.navigation');
@@ -66,6 +75,9 @@ function toggleMenu() {
     closeButton.classList.toggle('show');
 }
 
+/**
+ * Function used to close dropdown when clicking menu-options
+ */
 function handleMenuClick() {
     const body = document.querySelector('body');
     const menu = document.querySelector('.navigation');
