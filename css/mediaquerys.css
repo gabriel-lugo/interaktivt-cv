@@ -1,3 +1,4 @@
+/* -----Tablet and larger Phones----- */
 @media (min-width: 500px) {
     h1 {
         font-size: 3rem;
@@ -17,6 +18,7 @@
     }
 }
 
+/* -----Small desktop----- */
 @media (min-width: 768px) {
     h1 {
         font-size: 4rem;
@@ -69,7 +71,7 @@
     }
 }
 
-
+/* -----Desktop----- */
 @media (min-width: 1200px) {
     h1 {
         font-size: 8rem;
@@ -113,6 +115,7 @@
     }
 }
 
+/* -----XXXL Screens----- */
 @media (min-width: 2056px) {
     h1 {
         font-size: 12rem;

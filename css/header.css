@@ -1,3 +1,4 @@
+/* -----Element styling----- */
 header {
     position: fixed;
     left: 0;
@@ -6,6 +7,8 @@ header {
     height: 4rem;
     background-color: var(--primary-color);
 }
+
+/* -----IDs----- */
 
 #menu-button {
     color: var(--secondary-color);
@@ -31,6 +34,8 @@ header {
     display: flex;
 }
 
+
+/* -----Classes----- */
 .logo {
     height: 3rem;
 }

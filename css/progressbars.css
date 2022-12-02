@@ -1,3 +1,4 @@
+/* -----Classes----- */
 .skill {
     width: 100%;
 }
@@ -33,24 +34,25 @@
 
 .html {
     width: 70%;
-    animation: html 3s;
+    animation: html 5s;
 }
 
 .css {
     width: 65%;
-    animation: css 3s;
+    animation: css 5s;
 }
 
 .javascript {
     width: 45%;
-    animation: javascript 3s;
+    animation: javascript 5s;
 }
 
 .heavy-metal {
     width: 100%;
-    animation: heavy-metal 3s;
+    animation: heavy-metal 5s;
 }
 
+/* -----Animation keyframse----- */
 @keyframes html {
     0% {
         width: 0%;

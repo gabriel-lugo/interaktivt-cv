@@ -1,8 +1,10 @@
+/* -----Element styling----- */
 footer {
     height: 4rem;
     background-color: var(--primary-color);
 }
 
+/* -----Classes----- */
 .social-media a {
     text-decoration: none;
 }
