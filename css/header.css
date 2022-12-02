@@ -50,7 +50,7 @@ header {
     height: 100vh;
     background-color: var(--primary-color);
 }
- 
+
 .navigation.open .menu {
     padding: 1rem;
     margin-top: 5rem;
@@ -61,7 +61,6 @@ header {
 .navigation.open .menu-item {
     text-transform: uppercase;
     font-size: 3rem;
-    margin: 2rem;
     text-decoration: none;
     color: var(--secondary-color);
 }

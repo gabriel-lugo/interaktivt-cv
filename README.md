@@ -1,4 +1,10 @@
-# Ett interaktivt digitalt CV
+# My interactive digital CV
+
+## Assignment
+In this project I have created a interactive CV where I present myself and my skills.
+
+## Demo
+[See my interactive CV here.]((https://gabriel-lugo.github.io/interaktivt-cv/))
  
 
 I den här laborationen skall du skapa ett interaktivt digitalt CV där du presenterar dig själv och dina kunskaper. Till exempel kan du beskriva vem du är med bild och text, skapa en portfolio med dina projekt, kanske till och med inkludera en länk till ditt GitHub konto eller andra sociala profiler? Uppgiften är fri och du väljer själv hur din sida ska se ut och hur användaren interagerar med sidan. Låt kreativiteten flöda!
