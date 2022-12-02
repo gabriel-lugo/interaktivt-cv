@@ -12,6 +12,7 @@
     }
 
     .line {
+        height: .3rem;
         width: 3rem;
     }
 
@@ -32,8 +33,6 @@
         display: none;
     }
 
-
-
     .navigation {
         display: flex;
     }
@@ -47,7 +46,7 @@
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.5rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
         color: var(--secondary-color);
     }
 
@@ -60,6 +59,7 @@
     }
 
     .line {
+        height: .4rem;
         width: 4rem;
     }
 
@@ -85,6 +85,7 @@
     }
 
     .line {
+        height: .5rem;
         width: 6rem;
     }
 
@@ -137,6 +138,11 @@
 
     main {
         margin-top: 8rem;
+    }
+
+    .line {
+        height: 1rem;
+        width: 11rem;
     }
 
     .profile {

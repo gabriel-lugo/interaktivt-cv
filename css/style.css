@@ -54,27 +54,22 @@ p {
 
 .line {
     background-color: var(--primary-color);
-    height: .5rem;
+    height: .2rem;
     width: 2rem
-    
 }
 
 #home {
     height: 100vh;
 }
 
-/* Progression bars */
-
-
 .reveal {
     opacity: 0;
-    transition: 1s;
+    transition: 600ms;
 }
 
 .reveal.active {
     opacity: 1;
 }
-
 
 .social-icon-home {
     font-size: 4rem;
